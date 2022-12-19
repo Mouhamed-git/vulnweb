@@ -4,7 +4,7 @@ if(!isset($_SESSION)) { //démarre la gestion des sessions PHP
 }
 
 if(isset($_GET['id'])) {
-	$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobdd"); // Connexion BDD (utilisateur et mot de passe définis dans demobdd.sql)
+	$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobd"); // Connexion BDD (utilisateur et mot de passe définis dans demobd.sql)
 	if ($mysqli->connect_errno) {
 		die("Échec de la connexion : " . $mysqli->connect_error);
 	}

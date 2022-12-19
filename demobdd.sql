@@ -8,7 +8,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `demobdd`
+-- Base de données :  `demobd`
 --
 
 -- --------------------------------------------------------
@@ -122,5 +122,5 @@ ALTER TABLE `commentaires`
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 CREATE USER 'demoutilisateur'@'localhost' IDENTIFIED BY 'Mdp@Ass3zSécuris3';
-GRANT ALL PRIVILEGES ON demobdd.* To 'demoutilisateur'@'localhost';
+GRANT ALL PRIVILEGES ON demobd.* To 'demoutilisateur'@'localhost';
 FLUSH PRIVILEGES;

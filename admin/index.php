@@ -5,7 +5,7 @@ if(!isset($_SESSION)) { //démarre la gestion des sessions PHP
 
 if(isset($_POST['nomutilisateur']) && isset($_POST['motdepasse'])) {
 	
-	$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobdd"); // Connexion BDD (Autilisateur et mot de passe définis dans demobdd.sql)
+	$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobd"); // Connexion BDD (Autilisateur et mot de passe définis dans demobd.sql)
 	if ($mysqli->connect_errno) {
 		die("Impossible de se connecter : " . $mysqli->connect_error);
 	}
@@ -170,7 +170,7 @@ if(!isset($_SESSION['admin'])) { //Si on n'est pas connecté on affiche le formu
                             </thead>
                             <tbody>
 						<?php 
-						$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobdd"); // Connexion BDD (utilisateur et mot de passe définis dans demobdd.sql)
+						$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobd"); // Connexion BDD (utilisateur et mot de passe définis dans demobd.sql)
 						if ($mysqli->connect_errno) {
 							die("Échec de la connexion : " . $mysqli->connect_error); //affiche l'erreur
 						}

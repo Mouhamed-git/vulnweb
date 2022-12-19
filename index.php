@@ -34,7 +34,7 @@ Licence CCA 3.0, Images CC0 Pixabay.com
 			</header>
 
 		<?php
-			$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobdd"); // Connexion BDD (utilisateur et mot de passe définis dans demobdd.sql)
+			$mysqli = new mysqli("localhost", "demoutilisateur", "Mdp@Ass3zSécuris3", "demobd"); // Connexion BDD (utilisateur et mot de passe définis dans demobd.sql)
 			if ($mysqli->connect_errno) {
 				die("Échec de la connexion : " . $mysqli->connect_error); //affiche l'erreur
 			}
