@@ -1,0 +1,29 @@
+0. Prérequis :
+
+	Ce fichier d'aide suppose que vous avez un fichier demobdd.sql avec tous les autres dossiers et fichiers dans /var/www/html/demo/ (kali)
+	Donnez les droits au répertoire demo :
+	chmod -R 755 /var/www/html/demo
+   chown -R www-data:www-data /var/www/html/demo
+
+1. Lancement de apache2 et mysql :
+
+	service apache2 start
+   service mysql start
+	mysql
+
+
+2. Création de la base de données une fois mysql lancé:
+
+	CREATE DATABASE demobdd;
+	USE demobdd;
+	source /var/www/html/demo/demobdd.sql
+
+	Si besoin de supprimer et de recréer la base de données :
+	DROP DATABASE demobdd;
+	DROP USER 'demoutilisateur'@'localhost'; (puis recréer la base de données)
+
+
+3. Si erreur de connexion Mysql :
+	
+	Vérifier le mot de passe SQL de demoutilisateur, par défaut "Mdp@Ass3zSécuris3"
+	Il est présent (et à modifier éventuellement) dans demobdd.sql et presque tous les fichiers .php
